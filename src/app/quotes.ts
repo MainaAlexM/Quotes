@@ -1,5 +1,5 @@
 export class Quotes {
-    constructor(public quote: number,public author: string, public upvote:number, public downvote:number, public datePast: Date){
+    constructor(public quote: string,public author: string, public upvote:number, public downvote:number, public datePast: Date){
         this.quote = quote
         this.author = author
         this.upvote = upvote
