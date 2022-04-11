@@ -11,7 +11,12 @@ export class QuoteInfoComponent implements OnInit {
   quote!: Quotes;
   @Output() toDelete = new EventEmitter<boolean>();
 
-  
+  upVote(){
+
+  }
+  downVote(){
+    
+  }
   deleteItem(done:boolean){
     this.toDelete.emit(done);
   }
