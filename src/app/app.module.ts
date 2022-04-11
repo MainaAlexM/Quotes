@@ -6,13 +6,15 @@ import { AppComponent } from './app.component';
 import { QuoteBlockComponent } from './quote-block/quote-block.component';
 import { QuoteInfoComponent } from './quote-block/quote-info/quote-info.component';
 import { DatingPipe } from './dating.pipe';
+import { TopQuoteDirective } from './top-quote.directive';
 
 @NgModule({
   declarations: [
     AppComponent,
     QuoteBlockComponent,
     QuoteInfoComponent,
-    DatingPipe
+    DatingPipe,
+    TopQuoteDirective
   ],
   imports: [
     BrowserModule,
