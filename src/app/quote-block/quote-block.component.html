@@ -1,13 +1,11 @@
 <div class="container">
     <h1 class="mt-5 text-center">Fine Quotes</h1>
 
-    <ul>
-        <div *ngFor='let quote of quotes;let i = index'>
-          <li>{{quote.statement}}</li>
-          
-          
-        </div>
-      </ul>
+    <ul *ngFor='let quote of quotes;let i = index'>
+        <li>{{quote.statement}}</li>
+        
+        <app-quote-info *ngIf='quote.statement' [quote]='quote'(isComplete) = 'deleteQuote($event,i)' ></app-quote-info>
+    </ul>
 
 </div>
 
