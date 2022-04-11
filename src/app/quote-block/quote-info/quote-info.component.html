@@ -1,5 +1,7 @@
 
 <!-- <p>{{quotes}} </p> -->
-    <button (click)='upVote()'>Upvote</button>
-    <button (click)='downVote()'>Downvote</button>
+<div class="quote-details">
+    <button (click)='upVote()'> Upvote &nbsp; {{quote.upvote}}</button>
+    <button (click)='downVote()'>Downvote &nbsp; {{quote.downvote}}</button>
     <button (click)='deleteItem(true)'>Delete</button>
+</div>
