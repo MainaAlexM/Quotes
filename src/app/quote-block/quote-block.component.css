@@ -1,3 +1,39 @@
 ul li{
     list-style-type: none;
 }
+/* .page{
+    height: 100vh;
+} */
+.fine{
+    /* height: 100vh; */
+    /* overflow: scroll; */
+    margin: 0 auto 0.4rem auto;
+}
+.quotes{
+    margin: 0;
+    /* overflow-wrap: break-word; */
+}
+.form-row{
+    width: 50%;
+    margin: 0 auto;
+}
+.quote-part{
+    /* background-color: rgb(104, 60, 60); */
+    width: 100%;
+    border: solid thin;
+    border-radius: 0.6rem;
+    padding: 0.3rem;
+    float: none;
+    margin-right: 0.2rem;
+    background-color: lightpink;
+    word-wrap: break-word;
+
+}
+#details{
+    text-align: center;
+    padding-top: 0.1rem;
+}
+/* ul{
+    display: flex;
+
+} */

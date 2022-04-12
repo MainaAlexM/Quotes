@@ -1,22 +1,26 @@
-<div class="container">
-    <div class="row quotes">
-        <h1 class="m-5 text-center">Fine Quotes</h1>
-
-    <ul *ngFor='let quote of quotes;let i = index'>
-        
-        <li class="quote-part " > <sup><i class="fa-solid fa-quote-left  fa-1x"></i></sup>  {{quote.statement}} <sup><i class="fa-solid fa-quote-right  fa-1x"></i></sup></li>
-        
-        <li id="list"> By: {{quote.author}} <br> Posted: {{quote.datePast|dating}}</li>
-        
-        <app-quote-info class="text-center" *ngIf='quote.statement' [quote]='quote'(isComplete) = 'deleteQuote($event,i)' ></app-quote-info>
-    </ul>
-
+<div class="row page">
+    <div class="container fine col">
+        <div class="container-fluid quotes col">
+            <h1 class="m-5 text-center">Fine Quotes</h1>
+    
+        <ul class="quote-part row" *ngFor='let quote of quotes;let i = index'>
+            
+            <li class="" style="padding: 2rem;"> <sup><i class="fa-solid fa-quote-left fa-1x"></i></sup>  {{quote.statement}} <sup><i class="fa-solid fa-quote-right fa-1x"></i></sup></li>
+            
+            <li id="details"> Posted By: {{quote.author}} &nbsp; {{quote.datePast|dating}}</li>
+            
+            <app-quote-info class="" *ngIf='quote.statement' [quote]='quote'(isComplete) = 'deleteQuote($event,i)' ></app-quote-info>
+        </ul>
+    
+        </div>
+    
+    
     </div>
 
-    <div class="row">
-        <h2 class="m-3 text-center">Fine Quotes Worth a lifetime</h2>
+    <div class=" form-row col">
+        <h1 class="m-3 text-center">Fine Quotes Worth a lifetime</h1>
         <app-cite-form (addQuote)="newQuotation($event)"></app-cite-form>
-
+    
     </div>
+    
 </div>
-

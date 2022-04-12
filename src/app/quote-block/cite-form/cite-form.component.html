@@ -1,7 +1,5 @@
-<p>cite-form works!</p>
 <div class="container">
-    <h4 class="text-center">Post a New Quote</h4>
-    <hr >
+    <h4 class="text-center" style="text-decoration: underline;">Post a New Quote</h4>
     <form (ngSubmit)='submitGoal()'#goalForm='ngForm'>
         <div class="form-group">
 
@@ -23,7 +21,7 @@
         </div>
         <div class="form-group">
 
-            <label for="date">Select Quote Date</label> <br>
+            <label id="dateLabel" for="date">Select Quote Date</label> <br>
             <input type='date' id="date" [(ngModel)]="quotation.datePast" name="date" #date="ngModel"required>
             <div [hidden]="date.valid || date.pristine" class="alert alert-danger">
                 <p>Select a date</p>
