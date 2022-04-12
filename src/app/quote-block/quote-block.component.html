@@ -2,6 +2,13 @@
     <div class="container fine col">
         <div class="container-fluid quotes col">
             <h1 class="m-5 text-center">Fine Quotes</h1>
+
+                <!-- displays the top quote -->
+            <div class="top-quote">  
+                <ul class="quote-part row" *ngFor='let quote of quotes;let i = index'>
+                    <li *ngIf = 'isTop' > {{quote}}</li>
+                </ul>
+            </div>
     
         <ul class="quote-part row" *ngFor='let quote of quotes;let i = index'>
             

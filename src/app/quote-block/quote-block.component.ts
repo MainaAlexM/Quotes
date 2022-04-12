@@ -25,6 +25,10 @@ export class QuoteBlockComponent implements OnInit {
     quote.datePast = new Date(quote.datePast);
     this.quotes.push(quote);
   }
+  isTop(){
+    // let votes = this.quotes.
+    // if(this.quotes.)
+  }
   constructor() { }
 
   ngOnInit(): void {
