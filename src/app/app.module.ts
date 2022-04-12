@@ -7,6 +7,9 @@ import { QuoteBlockComponent } from './quote-block/quote-block.component';
 import { QuoteInfoComponent } from './quote-block/quote-info/quote-info.component';
 import { DatingPipe } from './dating.pipe';
 import { TopQuoteDirective } from './top-quote.directive';
+import { CiteFormComponent } from './quote-block/cite-form/cite-form.component';
+import { CommonModule } from '@angular/common';
+import { FormsModule }   from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -14,11 +17,14 @@ import { TopQuoteDirective } from './top-quote.directive';
     QuoteBlockComponent,
     QuoteInfoComponent,
     DatingPipe,
-    TopQuoteDirective
+    TopQuoteDirective,
+    CiteFormComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    CommonModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

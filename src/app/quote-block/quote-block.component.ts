@@ -19,9 +19,9 @@ export class QuoteBlockComponent implements OnInit {
     }
   }
 
-  addNewQuote(quote: Quotes) {
-    // let quoteLength = this.quotes.length;
-    // quote. = quoteLength++;
+  newQuotation(quote: Quotes) {
+    let quoteLength = this.quotes.length;
+    quote.id = quoteLength++;
     quote.datePast = new Date(quote.datePast);
     this.quotes.push(quote);
   }
