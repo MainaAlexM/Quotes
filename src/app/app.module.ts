@@ -11,6 +11,7 @@ import { CiteFormComponent } from './quote-block/cite-form/cite-form.component';
 import { CommonModule } from '@angular/common';
 import { FormsModule }   from '@angular/forms';
 import { NavBarComponent } from './nav-bar/nav-bar.component';
+import { IntroComponent } from './intro/intro.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { NavBarComponent } from './nav-bar/nav-bar.component';
     DatingPipe,
     TopQuoteDirective,
     CiteFormComponent,
-    NavBarComponent
+    NavBarComponent,
+    IntroComponent
   ],
   imports: [
     BrowserModule,

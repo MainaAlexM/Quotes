@@ -22,18 +22,20 @@ ul li{
     margin-right: 0.4rem;
 }
 .quote-part{
-    /* background-color: rgb(104, 60, 60); */
-    width: 100%;
+    min-width: 30%;
+    max-width: 32%;
     border: solid thin;
     border-radius: 0.6rem;
     padding: 0.3rem;
     float: none;
     margin-right: 0.2rem;
     background-color: rgb(221, 217, 211);
-    word-wrap: break-word;
 
 }
 #details{
     text-align: center;
     padding-top: 0.1rem;
+}
+.the-quote{
+    font-weight: 800;
 }

@@ -1,0 +1,16 @@
+.de-quotes{
+    text-align:start;
+    font-style: italic;
+    font-weight: 700;
+}
+.normal-text{
+    width: 80%;
+    margin-left: 5rem;
+    text-align: center;
+}
+.intro{
+    background-image: url(src/assets/quotes.jpg);
+    color: black;
+    padding: 2rem;
+    /* height: 60vh; */
+}
