@@ -19,6 +19,12 @@ export class QuoteBlockComponent implements OnInit {
     }
   }
 
+  addNewQuote(quote: Quotes) {
+    // let quoteLength = this.quotes.length;
+    // quote. = quoteLength++;
+    quote.datePast = new Date(quote.datePast);
+    this.quotes.push(quote);
+  }
   constructor() { }
 
   ngOnInit(): void {
