@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkQuotes=self.webpackChunkQuotes||[]).push([[532],{601:()=>{}},e=>{e(e.s=601)}]);
