@@ -1,4 +1,4 @@
-import { Component, OnInit, Output, EventEmitter } from '@angular/core';
+import { Component, OnInit, Output, EventEmitter, Input } from '@angular/core';
 import { Quotes } from '../quotes';
 
 @Component({
@@ -7,6 +7,7 @@ import { Quotes } from '../quotes';
   styleUrls: ['./quote-block.component.css']
 })
 export class QuoteBlockComponent implements OnInit {
+  @ Input()
   quotes:Quotes[] = [
     new Quotes (1, "If you set your goals ridiculously high and it's a failure, you will fail above everyone else's success.", "James Cameron", 0, 0, new Date(27,7,1992)),
     new Quotes (2, "Life is what happens when you're busy making other plans.", "John Lennon", 0, 0, new Date(17,12,2004)),
