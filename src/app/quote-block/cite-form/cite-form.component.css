@@ -8,3 +8,9 @@ input{
 #date{
     display: inline;
 }
+form{
+    margin: 2rem ;
+}
+.form-view{
+    border: solid thin grey;
+}
