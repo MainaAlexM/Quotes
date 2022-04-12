@@ -15,7 +15,11 @@ ul li{
 }
 .form-row{
     width: 50%;
+    height: max-content;
     margin: 0 auto;
+    background-color: rgb(221, 217, 211);
+    padding-bottom: 2rem;
+    margin-right: 0.4rem;
 }
 .quote-part{
     /* background-color: rgb(104, 60, 60); */
@@ -25,7 +29,7 @@ ul li{
     padding: 0.3rem;
     float: none;
     margin-right: 0.2rem;
-    background-color: lightpink;
+    background-color: rgb(221, 217, 211);
     word-wrap: break-word;
 
 }
