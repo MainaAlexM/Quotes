@@ -10,6 +10,7 @@ export class QuoteInfoComponent implements OnInit {
   @Input()
   quote!: Quotes;
   @Output() toDelete = new EventEmitter<boolean>();
+  deleteItem(done:boolean){this.toDelete.emit(done);}
   
   upVote(){
     this.quote.upvote+=1;
@@ -18,13 +19,9 @@ export class QuoteInfoComponent implements OnInit {
   downVote(){
     this.quote.downvote+=1;
   }
-  deleteItem(done:boolean){
-    this.toDelete.emit(done);
-  }
+  
 
 
-
-  constructor() { }
 
   ngOnInit(): void {
   }

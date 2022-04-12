@@ -1,7 +1,7 @@
 
 <!-- <p>{{quotes}} </p> -->
 <div class="quote-details">
-    <button (click)='upVote()'> Upvote &nbsp; {{quote.upvote}}</button>
-    <button (click)='downVote()'>Downvote &nbsp; {{quote.downvote}}</button>
-    <button (click)='deleteItem(true)'>Delete</button>
+    <button class="btn-success m-4" (click)='upVote()'><i class="fa fa-thumbs-up" id="like"></i> &nbsp; {{quote.upvote}}</button>
+    <button class="btn-primary m-4" (click)='downVote()'> <i class="fa fa-thumbs-down" id="dislike"></i> &nbsp; {{quote.downvote}}</button>
+    <button class="btn btn-danger m-4" (click)="deleteItem(true)"><i class="fa fa-trash" id="delete"></i></button>
 </div>
