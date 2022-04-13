@@ -1,6 +1,12 @@
 # Quotes
+This is application displays custom quotes posted by the author and allows the users customize and post their quotes. The interface is simple, with basic functionality, and a seamless user experience.
+This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.3.0. Besides the design, I was glad learning how to navigate the angular cli and file system while designing this app.
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.3.0.
+## Author
+This application was a solo project, developed as a learning tool by Alex Maina, through his Software Engineering courswork at Moringa School.
+
+## Usage
+The author is glad that any interested developer can use his code to advance it further or propose pull requests for improvements. One can find this app on github pages via [this Link](https://mathenge-alex.github.io/Quotes/).
 
 ## Development server
 
