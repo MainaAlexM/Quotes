@@ -1,0 +1,6 @@
+
+<div class="container-fluid quote-details row">
+    <button class="btn-success m-3 col-xs col-sm col-md col-lg col-xl" (click)='upVote()'><i class="fa fa-thumbs-up" id="like"></i> &nbsp; {{quote.upvote}}</button>
+    <button class="btn-primary m-3 col-xs col-sm col-md col-lg col-xl" (click)='downVote()'> <i class="fa fa-thumbs-down" id="dislike"></i> &nbsp; {{quote.downvote}}</button>
+    <button class="btn btn-danger m-3 col-xs col-sm col-md col-lg col-xl" (click)="deleteItem(true)"><i class="fa fa-trash" id="delete"></i></button>
+</div>

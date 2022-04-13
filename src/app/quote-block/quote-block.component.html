@@ -1,0 +1,35 @@
+<div class="row page">
+    <div class="container fine row">
+        <div class="container-fluid quotes row">
+            <h1 class="m-5 text-center">Fine Quotes</h1>
+
+                <!-- displays the top quote -->
+            <!-- <div class="top-quote row">  
+                <ul class="quote-part col" *ngFor='let quote of quotes;let i = index'>
+                    <li *ngIf = 'isTop' > {{quote}}</li>
+                </ul>
+            </div> -->
+    
+            <div class="quote-display row">
+                <ul class="quote-part col" *ngFor='let quote of quotes;let i = index'>
+                
+                    <li class="the-quote" style="padding: 2rem;"> <sup><i class="fa-solid fa-quote-left fa-1x"></i></sup>  {{quote.statement}} <sup><i class="fa-solid fa-quote-right fa-1x"></i></sup></li>
+                    
+                    <li id="details"> Posted By: {{quote.author}} &nbsp; {{quote.datePast|dating}}</li>
+                    
+                    <app-quote-info class="" *ngIf='quote.statement' [quote]='quote'(isComplete) = 'deleteQuote($event,i)' ></app-quote-info>
+                </ul>
+            </div>
+        
+        </div>
+    
+    
+    </div>
+
+    <div class=" form-row col" id="post">
+        <h1 class="m-3 text-center">Fine Quotes Worth a lifetime</h1>
+        <app-cite-form (addQuote)="newQuotation($event)"></app-cite-form>
+    
+    </div>
+    
+</div>
