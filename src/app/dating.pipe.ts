@@ -22,12 +22,12 @@ export class DatingPipe implements PipeTransform {
         };
         let timeSpan;
         for (const i in durations) {
-            timeSpan = Math.floor(pastSeconds / durations[i]);
+            timeSpan = Math.floor((pastSeconds / durations[i])/365);
             if (timeSpan > 0)
                 if (timeSpan === 1) {
                     return `$(timeSpan) $(i) ago`;
                 } else {
-                    return timeSpan + ' ' +'days ago';
+                    return timeSpan + ' ' + i + 's ago';
                 }
         }
     }
