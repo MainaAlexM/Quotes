@@ -27,7 +27,7 @@ export class DatingPipe implements PipeTransform {
                 if (timeSpan === 1) {
                     return `$(timeSpan) $(i) ago`;
                 } else {
-                    return timeSpan + ' ' + i + 's ago';
+                    return timeSpan + ' ' +'days ago';
                 }
         }
     }
